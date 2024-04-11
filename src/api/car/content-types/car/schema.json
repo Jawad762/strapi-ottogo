@@ -1,0 +1,122 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": {
+    "singularName": "car",
+    "pluralName": "cars",
+    "displayName": "car"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "manufacturer": {
+      "type": "enumeration",
+      "enum": [
+        "Acura",
+        "Alfa Romeo",
+        "Aston Martin",
+        "Audi",
+        "BMW",
+        "Bentley",
+        "Bugatti",
+        "Buick",
+        "Cadillac",
+        "Chery",
+        "Chevrolet",
+        "Chrysler",
+        "Dacia",
+        "Daihatsu",
+        "Dodge",
+        "Ferrari",
+        "Fiat",
+        "Ford",
+        "GMC",
+        "Genesis",
+        "Geely",
+        "Great Wall",
+        "Honda",
+        "Hyundai",
+        "Infiniti",
+        "Isuzu",
+        "Jaguar",
+        "Jeep",
+        "Kia",
+        "Koenigsegg",
+        "Land Rover",
+        "Lamborghini",
+        "Lexus",
+        "Lincoln",
+        "Lotus",
+        "MINI",
+        "Maserati",
+        "Mazda",
+        "Mahindra",
+        "Maybach",
+        "McLaren",
+        "Mercedes-Benz",
+        "Mitsubishi",
+        "NIO",
+        "Nissan",
+        "Pagani",
+        "Perodua",
+        "Porsche",
+        "Proton",
+        "Ram",
+        "Rimac",
+        "Rivian",
+        "Rolls-Royce",
+        "SEAT",
+        "SSangYong",
+        "Smart",
+        "Skoda",
+        "Subaru",
+        "Suzuki",
+        "Tata",
+        "Tesla",
+        "Toyota",
+        "Volkswagen",
+        "Volvo",
+        "Xpeng",
+        "Faraday Future",
+        "Haval",
+        "Lucid Motors"
+      ],
+      "required": true
+    },
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "biginteger",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
