@@ -4,7 +4,8 @@
   "info": {
     "singularName": "car",
     "pluralName": "cars",
-    "displayName": "car"
+    "displayName": "car",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -90,7 +91,7 @@
       "required": true
     },
     "year": {
-      "type": "biginteger",
+      "type": "integer",
       "required": true
     },
     "title": {
@@ -98,25 +99,26 @@
       "required": true
     },
     "thumbnail": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
-    },
-    "images": {
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
+      ]
+    },
+    "images": {
       "type": "media",
-      "multiple": true
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
